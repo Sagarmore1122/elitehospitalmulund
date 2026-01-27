@@ -7,7 +7,6 @@
   color: #000000;
   font-family: Arial, sans-serif; */
 
-
     position: relative;
   background: url("Images/vv.webp") center / cover no-repeat;
   min-height: 100vh;
@@ -198,6 +197,48 @@
   }
  
 }
+.hero-left-text {
+  color: #ffffff;
+  max-width: 520px;
+}
+
+/* MAIN HEADING */
+.hero-left-text h1 {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+/* SUB LINE */
+.hero-left-text h4 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+/* PARAGRAPH */
+.hero-left-text p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .hero-left-text h1 {
+    font-size: 30px;
+  }
+
+  .hero-left-text h4 {
+    font-size: 18px;
+  }
+
+  .hero-left-text p {
+    font-size: 14px;
+  }
+}
+
 
 /* Hero section END */
 
