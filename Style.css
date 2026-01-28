@@ -18,7 +18,9 @@
 
 /* LOGO */
 .lp-logo img {
-  max-height: 100px;
+  max-height: 150px;
+  padding: 0;
+  margin: 0;
 }
 
 /* CTA BUTTON */
