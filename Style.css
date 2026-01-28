@@ -32,7 +32,7 @@
   color: #fff;
   border: none;
   padding: 12px 22px;
-  font-size: 14px; 
+  font-size: 14px;
   font-weight: bold;
   border-radius: 30px;
   cursor: pointer;
@@ -861,10 +861,33 @@
 }
 
 .hospital-content p {
+  position: relative;
+  padding-left: 36px;
+  /* space for check icon */
   font-size: 22px;
   color: #6a4aa3;
   margin-bottom: 16px;
+  line-height: 1.6;
 }
+
+.hospital-content p::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+  background: #66cc00;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
 
 /* RIGHT 50% */
 .simple-carousel-wrapper {
@@ -922,12 +945,17 @@
 
   .hospital-content p {
     font-size: 18px;
+    padding-left: 30px;
+  }
+
+  .hospital-content p::before {
+    font-size: 16px;
   }
 }
 
 /* Section 6 END */
 
-/* Section 66 Start */
+/* Section 7 Start */
 
 .map-section {
   padding: 0;
@@ -970,33 +998,41 @@
   }
 }
 
-
-/* Section 6 END  */
+/* Section 7 END  */
 
 
 
 /* Footer */
 
 .site-footer {
-  background: #7a28bc;
-  /* same pink tone */
-  color: #fff;
-  padding: 25px 20px;
+  background: #ffffff;
+  /* color: #fff; */
+  padding: 15px 20px;
   font-family: Arial, sans-serif;
 }
 
 .footer-container {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+   display: flex;   
+  /* grid-template-columns: 1fr 2fr 1fr; */
   align-items: center;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 /* LOGO */
 .footer-logo img {
-  max-height: 200px;
+  max-height: 150px;
+   width: auto;
+  display: block;
+ 
+}
+
+.footer-logo {
+  flex-shrink: 0;
+    min-width: 120px;
+  text-align: center;
 }
 
 .logo-placeholder {
@@ -1012,18 +1048,16 @@
   line-height: 1.6;
 }
 
-
-
 /* MOBILE */
+
 @media (max-width: 768px) {
   .footer-container {
-    grid-template-columns: 1fr;
-    text-align: center;
+    flex-direction: column;
+    gap: 20px;
   }
 
-  .footer-copy {
-    text-align: center;
+  .footer-logo img {
+    max-height: 80px;
   }
 }
-
 /* Footer */
