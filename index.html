@@ -9,26 +9,42 @@
 </head>
 
 <body>
+  <header class="lp-header">
+    <div class="lp-header-inner">
+
+      <!-- LOGO -->
+      <div class="lp-logo">
+        <img src="Images/elite-logo.webp" alt="Hospital Logo">
+      </div>
+
+      <!-- CTA BUTTON -->
+      <button class="contact-btn" onclick="scrollToForm()">
+        Contact Us Today
+      </button>
+
+    </div>
+  </header>
+
   <!-- Section 1 -->
-  <div class="hero-banner">
+  <div class="hero-banner" id="appointment-form">
     <div class="hero-overlay"></div>
 
     <div class="hero-container">
       <!-- LEFT CONTENT -->
       <div class="hero-content">
-         <h1>
-    A Mother &<br>
-    her child
-  </h1>
+        <h1>
+          A Mother &<br>
+          her child
+        </h1>
 
-  <h4>should always be together.</h4>
+        <h4>should always be together.</h4>
 
-  <p>
-    At Elite Women and Child care hospital you will find
-    the most caring Doctors & Staff supported by a
-    state-of-the art medical facility to keep you and your
-    child healthy and happy.
-  </p>
+        <p>
+          At Elite Women and Child care hospital you will find
+          the most caring Doctors & Staff supported by a
+          state-of-the art medical facility to keep you and your
+          child healthy and happy.
+        </p>
       </div>
 
       <!-- RIGHT FORM -->
@@ -36,11 +52,11 @@
         <h2>Book Your Appointment!</h2>
         <p>Please share your details below:</p>
 
-        <form>
-          <input type="text" placeholder="Name*" required>
-          <input type="tel" placeholder="Mobile Number*" required>
+        <form action="submit.php" method="POST">
+          <input type="text" name="name" placeholder="Name*" required>
+          <input type="tel" name="mobile" placeholder="Mobile Number*" required>
           <label class="edd-label">Estimated Date of Delivery*</label>
-          <input type="date" required>
+          <input type="text" name="edd" placeholder="EDD*" required>
 
           <!-- PULSE BUTTON ONLY -->
           <button type="submit" class="pulse-button">
@@ -53,202 +69,225 @@
   </div>
   <!-- Section 1 END -->
 
-<!-- Section 2 Start -->
+  <!-- Section 2 Start -->
 
-<section class="single-decision">
-  <h2>
-    One <span>Pregnancy</span>. One <span>Hospital</span>. One <span>Safe Decision</span>.
-  </h2>
-</section>
+  <section class="single-decision">
+    <h2>
+      One <span>Pregnancy</span>. One <span>Hospital</span>. One <span>Safe Decision</span>.
+    </h2>
+  </section>
 
-<!-- Section 2 END -->
+  <!-- Section 2 END -->
 
-  
+
 
   <!-- section 3 Start -->
   <section class="maternity-section">
-  <div class="container">
+    <div class="container">
 
-    <h2 class="section-title">
-      Safe & Luxurious <span>Safe Place</span> For MoMs To Be:
-    </h2>
+      <h2 class="section-title">
+        Safe & Luxurious <span>Safe Place</span> For MoMs To Be:
+      </h2>
 
-    <div class="content-grid">
-      
-      <!-- LEFT CONTENT -->
-      <div class="left-content">
-        <p>
-          Welcoming a new life can be an exciting and demanding experience for any couple.
-          Hence, at Elite Women & Child Care Hospital our gynecologists and support staff are
-          here to assist you at every step of the way right from pregnancy planning to baby
-          delivery. Our luxurious, affordable maternity care is tailored to your specific
-          needs. With a dedicated focus on comfort, advanced medical expertise, and innovative
-          birthing options like water births, our maternity department stands out as your
-          trusted partner in Mulund.
-        </p>
+      <div class="content-grid">
+
+        <!-- LEFT CONTENT -->
+        <div class="left-content">
+          <p>
+            Welcoming a new life can be an exciting and demanding experience for any couple.
+            Hence, at Elite Women & Child Care Hospital our gynecologists and support staff are
+            here to assist you at every step of the way right from pregnancy planning to baby
+            delivery. Our luxurious, affordable maternity care is tailored to your specific
+            needs. With a dedicated focus on comfort, advanced medical expertise, and innovative
+            birthing options like water births, our maternity department stands out as your
+            trusted partner in Mulund.
+          </p>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="right-content">
+          <ul>
+            <li>Luxurious Premium Maternity Care</li>
+            <li>Painless Delivery</li>
+            <li>Water Birthing</li>
+            <li>High Risk Pregnancy Management</li>
+            <li>24X7 Gynaec & Obstetrician</li>
+          </ul>
+        </div>
+
       </div>
-
-      <!-- RIGHT CONTENT -->
-      <div class="right-content">
-        <ul>
-          <li>Luxurious Premium Maternity Care</li>
-          <li>Painless Delivery</li>
-          <li>Water Birthing</li>
-          <li>High Risk Pregnancy Management</li>
-          <li>24X7 Gynaec & Obstetrician</li>
-        </ul>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- section 3 END  -->
 
   <!-- Divider Start-->
 
-<div class="purple-divider"></div>
+  <div class="purple-divider"></div>
 
- <!-- Divider END -->
+  <!-- Divider END -->
 
 
- <!-- Section 4 Start -->
+  <!-- Section 4 Start -->
 
- <section class="newborn-section">
-  <div class="container">
+  <section class="newborn-section">
+    <div class="container">
 
-    <!-- TOP CONTENT -->
-    <div class="top-grid">
-      <div class="top-left">
-        <h2 class="section-title">
-          Safe & Happy <span>Place For The Newborn</span>
-        </h2>
+      <!-- TOP CONTENT -->
+      <div class="top-grid">
+        <div class="top-left">
+          <h2 class="section-title">
+            Safe & Happy <span>Place For The Newborn</span>
+          </h2>
 
-        <p>
-          Caring for your child’s health is one of the greatest responsibilities
-          you as a parent & us as a Pediatric Hospital carry. At Elite Women and
-          child care Hospital we believe The First 24 Hours Should Be About
-          Bonding Not Shifting Hospitals hence we have created the MULUND’s and
-          possibly Mumbai’s Latest most advanced NICU.
-        </p>
+          <p>
+            Caring for your child’s health is one of the greatest responsibilities
+            you as a parent & us as a Pediatric Hospital carry. At Elite Women and
+            child care Hospital we believe The First 24 Hours Should Be About
+            Bonding Not Shifting Hospitals hence we have created the MULUND’s and
+            possibly Mumbai’s Latest most advanced NICU.
+          </p>
+        </div>
+
+        <div class="top-right">
+          <ul class="highlight-list">
+            <li>24X7 Paediatric Support</li>
+            <li>Super Specialist Pediatricians</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="top-right">
-        <ul class="highlight-list">
-          <li>24X7 Paediatric Support</li>
-          <li>Super Specialist Pediatricians</li>
-        </ul>
+      <!-- BOTTOM CONTENT -->
+      <div class="bottom-grid">
+        <div class="nicu-details">
+          <h3>LEVEL III TERTAIRY CARE NICU</h3>
+
+          <ul class="nicu-list">
+            <li><strong>Baby warmers:</strong> which maintain the body temperature within limits.</li>
+            <li><strong>Phototherapy units:</strong> which is a good way to treat jaundice in newborns.</li>
+            <li><strong>Nitric Oxide System:</strong> For breathing issues in new borns. We are the only hospital in
+              Mulund to offer continuous Inhaled Nitric Oxide (iNO) system.</li>
+            <li><strong>HFNC:</strong> High-Flow Nasal Cannula for oxygen support.</li>
+            <li><strong>HFOV:</strong> High-Frequency Oscillatory Ventilation for airflow support.</li>
+            <li><strong>Laminar Flow:</strong> To minimize the risk of infections.</li>
+          </ul>
+        </div>
+
+        <div class="nicu-image">
+          <img src="Images/family.webp" alt="NICU Care">
+        </div>
       </div>
+
     </div>
-
-    <!-- BOTTOM CONTENT -->
-    <div class="bottom-grid">
-      <div class="nicu-details">
-        <h3>LEVEL III TERTAIRY CARE NICU</h3>
-
-        <ul class="nicu-list">
-          <li><strong>Baby warmers:</strong> which maintain the body temperature within limits.</li>
-          <li><strong>Phototherapy units:</strong> which is a good way to treat jaundice in newborns.</li>
-          <li><strong>Nitric Oxide System:</strong> For breathing issues in new borns. We are the only hospital in Mulund to offer continuous Inhaled Nitric Oxide (iNO) system.</li>
-          <li><strong>HFNC:</strong> High-Flow Nasal Cannula for oxygen support.</li>
-          <li><strong>HFOV:</strong> High-Frequency Oscillatory Ventilation for airflow support.</li>
-          <li><strong>Laminar Flow:</strong> To minimize the risk of infections.</li>
-        </ul>
-      </div>
-
-      <div class="nicu-image">
-        <img src="YOUR-IMAGE-URL-HERE.jpg" alt="NICU Care">
-      </div>
-    </div>
-
-  </div>
-</section>
+  </section>
 
   <!-- Section 4 END -->
 
   <!-- Section 5 Start -->
   <section class="doctors-section">
 
-  <!-- TOP PURPLE STRIP -->
-  <div class="doctors-header">
-    <h2>
-      Team of 25+ Doctors you can <span>Trust</span>.. lead by
-    </h2>
-  </div>
-
-  <!-- DOCTORS -->
-  <div class="container doctors-grid">
-
-    <!-- Doctor 1 -->
-    <div class="doctor-card">
-      <div class="doctor-image">
-        <!-- Image goes here -->
-        <!-- <img src="doctor1.jpg" alt="Dr Kavya Shetty"> -->
-      </div>
-
-      <h3>Dr Kavya Shetty</h3>
-      <p class="designation">Gynecologist & Obstetrician</p>
-
-      <p class="qualification">
-        MBBS, MS Obstetrics & Gynecology,<br>
-        FIMS, Sonology/Fetal Medicine,<br>
-        Cosmetic Gynecology, Advanced IVF Fellowship
-      </p>
+    <!-- TOP PURPLE STRIP -->
+    <div class="doctors-header">
+      <h2>
+        Team of 25+ Doctors you can <span>Trust</span>.. lead by
+      </h2>
     </div>
 
-    <!-- Doctor 2 -->
-    <div class="doctor-card">
-      <div class="doctor-image">
-        <!-- <img src="doctor2.jpg" alt="Dr Y Shetty"> -->
+    <!-- DOCTORS -->
+    <div class="container doctors-grid">
+
+      <!-- Doctor 1 -->
+      <div class="doctor-card">
+        <div class="doctor-image">
+          <!-- Image goes here -->
+          <img src="Images/Dr-Kavya-Shetty.webp" alt="Dr Kavya Shetty">
+        </div>
+
+        <h3>Dr Kavya Shetty</h3>
+        <p class="designation">Gynecologist & Obstetrician</p>
+
+        <p class="qualification">
+          MBBS, MS Obstetrics & Gynecology,<br>
+          FIMS, Sonology/Fetal Medicine,<br>
+          Cosmetic Gynecology, Advanced IVF Fellowship
+        </p>
+        <p>Dr Kavya Shetty has over 11 years of experience in the field of Obstetrics & Gynecology. Over the years she
+          has managed a vast number of high risk pregnancies. She has assisted and done various laparoscopic surgeries
+          like total laparoscopic hysterectomy, cystectomy, lap myomectomy, operative lap for endometriosis, diagnostic
+          laparoscopy, salpingectomy in ectopic pregnancy and others. Having completed a fellowship in advanced IVF she
+          is already helping couples address infertility issue and guiding then on the path to parenthood.</p>
       </div>
 
-      <h3>DR Y Shetty</h3>
-      <p class="designation">Pediatrician & Neonatologist</p>
+      <!-- Doctor 2 -->
+      <div class="doctor-card">
+        <div class="doctor-image">
+          <img src="Images/Dr-Yuvaraja-Shetty.webp" alt="Dr Y Shetty">
+        </div>
 
-      <p class="qualification">
-        MBBS, MD (Paediatrics)
-      </p>
+        <h3>Dr. Yuvaraja Shetty</h3>
+        <p class="designation">Pediatrician & Neonatologist</p>
+
+        <p class="qualification">
+          MBBS, MD (Paediatrics)
+        </p>
+        <p>Dr. Yuvaraja Shetty, a highly skilled and board-certified pediatrician and neonatalogist, is committed to providing excellent care to babies. He assists parents right from the delivery room and offers comprehensive guidance on how to care for their babies.
+
+From attending newborns to offering care throughout their childhood, Dr. Yuvaraja is one of Mumbai’s most reputable pediatricians and neonatalogists.</p>
+      </div>
+
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- Section 5 END -->
 
-<!-- Section 5 END -->
-  
-<!-- Section 6 Start -->
- 
-<section class="hospital-section">
+  <div class="purple-divider"></div>
 
-  <!-- TOP HEADING -->
-  <div class="hospital-heading">
-    <h2>Choose Elite Women & Child Hospital Mulund</h2>
-  </div>
+  <!-- Section 6 Start -->
 
-  <div class="hospital-container">
+  <section class="hospital-section">
 
-    <!-- LEFT CONTENT -->
+  <h2 class="hospital-heading">
+    Choose Elite Women & Child Hospital Mulund
+  </h2>
+
+  <div class="hospital-layout">
+
+    <!-- LEFT CONTENT (50%) -->
     <div class="hospital-content">
       <p>Female only Hospital for your privacy and comfort</p>
       <p>Most advanced child birth center in Mulund</p>
       <p>Luxurious Rooms and wards</p>
     </div>
 
-    <!-- RIGHT IMAGES -->
-    <div class="hospital-images">
-      <img src="Images/Sitting area.jpeg" class="img-back" alt="Hospital Sitting Area">
-      <img src="Images/bed.jpeg" class="img-front" alt="Hospital Bed">
+    <!-- RIGHT CAROUSEL (50%) -->
+    <div class="simple-carousel-wrapper">
+
+      <div class="simple-carousel">
+        <img src="Images/Sitting area.jpeg" class="active">
+        <img src="Images/bed.jpeg">
+      </div>
+
+      <div class="carousel-controls">
+        <button class="prev-btn">❮</button>
+        <button class="next-btn">❯</button>
+      </div>
+
     </div>
 
   </div>
 </section>
-<!-- Section 6 END -->
+
+  <!-- Section 6 END -->
 
   <!-- Section 7 Start -->
   <section class="map-section">
     <div class="map-container">
 
       <!-- GOOGLE MAP WILL GO HERE LATER -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d71525.64943064676!2d72.937982!3d19.167223!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9005d6bb15f%3A0x74fc04e5daf054b4!2sElite%20Women%20%26%20Child%20Care%20Hospital%20%E2%80%93%20Maternity%2C%20IVF%2C%20Gynaecology%2C%20Paediatrics%2C%20Orthopaedics%2C%20Physiotherapy%20%26%20General%20Surgery!5e1!3m2!1sen!2sus!4v1769080866600!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d71525.64943064676!2d72.937982!3d19.167223!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9005d6bb15f%3A0x74fc04e5daf054b4!2sElite%20Women%20%26%20Child%20Care%20Hospital%20%E2%80%93%20Maternity%2C%20IVF%2C%20Gynaecology%2C%20Paediatrics%2C%20Orthopaedics%2C%20Physiotherapy%20%26%20General%20Surgery!5e1!3m2!1sen!2sus!4v1769080866600!5m2!1sen!2sus"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       <!-- Temporary placeholder (remove later) -->
       <div class="map-placeholder">
@@ -269,20 +308,15 @@
 
       <!-- LOGO (add image later) -->
       <div class="footer-logo">
-        <!-- <img src="Images/logo.png" alt="Motherhood Hospital"> -->
-        <span class="logo-placeholder">LOGO</span>
+        <img src="Images/Elite-Logo.svg" alt="Elite Hospital">
       </div>
 
       <!-- UNITS TEXT -->
-      <div class="footer-text">
-        Motherhood Units: Banashankari, HRBR Layout, Indiranagar, Sarjapur,<br>
-        Electronic City, Hebbal, Kothanur, Whitefield, Kanakapura Road Clinic
+      <div class="footer-text" onclick="scrollToForm()">
+        <h2>CONTACT US TODAY</h2>
       </div>
 
-      <!-- COPYRIGHT -->
-      <div class="footer-copy">
-        Copyright © Motherhood
-      </div>
+
 
     </div>
   </footer>
