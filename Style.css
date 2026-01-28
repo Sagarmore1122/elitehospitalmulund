@@ -42,7 +42,7 @@
 /* ===== MOBILE ===== */
 @media (max-width: 576px) {
   .lp-logo img {
-    max-height: 40px;
+    max-height: 100px;
   }
 
   .contact-btn {
@@ -99,7 +99,7 @@
 }
 
 .hero-content h1 {
-  font-size: 45px;
+  font-size: 70px;
   line-height: 1.3;
 }
 
@@ -225,7 +225,7 @@
   }
 
   .hero-content h1 {
-    font-size: 22px;
+    font-size: 40px;
     line-height: 1.4;
   }
 
